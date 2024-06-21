@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locação de Livros</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class ="container">
+        <div class="header">
+            <h2>Alugar livros</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <h2>Alunos Cadastrados</h2>
+                <ul class="alunos">
+                  <li onclick="selecionarAluno(this)">Aluno 1</li>
+                  <li onclick="selecionarAluno(this)">Aluno 2</li>
+                  <li onclick="selecionarAluno(this)">Aluno 3</li>
+                  <li onclick="selecionarAluno(this)">Aluno 4</li>
+                  <li onclick="selecionarAluno(this)">Aluno 5</li>
+                </ul>
+            </div>
+
+            <div class="form-control ">
+                <h2>Lista de Livros</h2>
+                <ul class="livros">
+                  <li onclick="selecionarLivro(this)">Livro 1: Exemplo de Título</li>
+                  <li onclick="selecionarLivro(this)">Livro 2: Outro Título</li>
+                  <li onclick="selecionarLivro(this)">Livro 3: Um Livro Qualquer</li>
+                  <li onclick="selecionarLivro(this)">Livro 4: O Melhor Livro</li>
+                  <li onclick="selecionarLivro(this)">Livro 5: Livro Interessante</li>
+                </ul>
+                <p>Data de Retirada: <time datetime="" id="current-time"></time>.</p>
+                <p>Data de Devolução:</p>
+                <input type="date">
+            </div> 
+       
+
+<!---
+            <div class="form-control">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div>
+            
+            <div class="form-control">
+                <label for="password-confirmation">Confirmação de Senha</label>
+                <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente">
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensagem de erro</small>
+            </div> -->
+
+            <button type="submit">Alugar</button>
+        </form>
+
+    </div>
+    
+    <script src="https://kit.fontawesome.com/d57ae5325f.js" crossorigin="anonymous"></script>
+    <script src="livros.js"></script>
+</body>
+</html>
